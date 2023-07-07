@@ -1,5 +1,4 @@
-ARG BUILD_FROM
-FROM ${BUILD_FROM}
+FROM "ghcr.io/home-assistant/aarch64-homeassistant-base:2023.06.1"
 
 # Synchronize with homeassistant/core.py:async_stop
 ENV \
