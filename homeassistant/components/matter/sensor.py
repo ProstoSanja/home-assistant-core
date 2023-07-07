@@ -142,9 +142,7 @@ DISCOVERY_SCHEMAS = [
             measurement_to_ha=lambda x: x,
         ),
         entity_class=MatterSensor,
-        required_attributes=(
-            clusters.Switch.Attributes.CurrentPosition,
-        ),
+        required_attributes=(clusters.Switch.Attributes.CurrentPosition,),
     ),
     MatterDiscoverySchema(
         platform=Platform.SENSOR,
@@ -155,8 +153,6 @@ DISCOVERY_SCHEMAS = [
             measurement_to_ha=lambda x: x,
         ),
         entity_class=MatterSensor,
-        required_attributes=(
-            clusters.Switch.Attributes.NumberOfPositions,
-        ),
+        required_attributes=(clusters.Switch.Attributes.NumberOfPositions,),
     ),
 ]
